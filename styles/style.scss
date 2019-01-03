@@ -1,0 +1,170 @@
+// comentários feitos por Fabio Daemon - proprios //
+
+// evitar problema com codificação de caracteres nas variáveis e etc //
+
+@charset "UTF-8";
+
+
+// demonstração do conhecimento no @import apenas. Tendo como ponto negativo usá-lo e poder deixar o tempo de processamento da aplicação lento //
+@import 'reset';
+
+
+// Variáveis para ilustração do conhecimento do uso delas //
+$cor-background: #ffffff;
+$cor-texto: #000000;
+$cor-modal: #000000;
+$cor-fechar: #999999;
+$cor-link: #000000;
+$cor-link-hover: #3333ff;
+$cor-button: #000000;
+$cor-button-txt: #ffffff;
+
+
+// mixin para ilustração do conhecimento do componente do SASS. Por ser um arquivo pequeno de CSS não foi usado em todas as propriedades, porque apenas foi uma ilustração do uso delas na SPA em questão //
+
+@mixin transform($efeito) {
+  -webkit-transform: $efeito;
+  -ms-transform: $efeito;
+  transform: $efeito;
+}
+
+// este é apenas uma demonstração de conhecimento do placeholder, já que a folha de estilo é pequena para dispor de tantos placeholders. O objetivo é apenas centralizar os botoes na NAV e qualquer outro componente sem precisar reescrever as mesmas propriedades //
+
+%centralizar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    margin: 5px;
+}
+    
+header{
+    color: $cor-texto;
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    
+    td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    
+    th{
+        border: 1px solid black;
+        padding: 5px;
+        text-align: left;
+    }
+    
+   tbody td:nth-child(odd) {
+       background: #eee;
+    }
+}
+
+nav{
+    
+   display: block; 
+   float: left;
+   width: 13%;
+   height: 100%;
+   background-color: $cor-background;
+   height: 968px; 
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $cor-modal;
+    
+.content{
+        
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+    }
+
+  .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+        &:hover{
+        color: $cor-texto;
+        cursor: pointer;
+            
+        }
+        
+        &:focus{
+        color: $cor-texto;
+        cursor: pointer;
+            
+        }
+    }
+
+.link{
+    
+    color: $cor-link;
+    cursor: pointer;
+       
+    
+        &:hover{
+            color: $cor-link-hover;
+            cursor: pointer;  
+            }
+        
+}
+
+ul{
+    
+    li{
+        text-decoration: none;
+        margin-bottom: 2px;
+    }
+}
+
+.button{
+  
+  color: $cor-button-txt;
+  background-color: $cor-button;
+  font-size: 20px;
+  border: 1px;
+
+}
+
+.botoes{
+    
+    @extend %centralizar;
+
+}
+
+
+#pesquisa {
+    
+  border-radius: 5px;
+  background-color: #3333ff;
+  padding: 5px;
+  width: 40%;
+  color: #ffffff;
+  font-weight: 300;
+    
+}

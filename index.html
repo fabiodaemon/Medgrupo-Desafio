@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+        <html ng-app="app1">
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+            <script src="scripts/route-config.js"></script>
+            <script src="scripts/table.js"></script>
+            <script src="scripts/size.js"></script>
+            <script src="scripts/modal.js"></script>
+            <script src="scripts/print.js"></script>
+            <link rel="stylesheet" href="styles/style.css">
+        </head>   
+        <header>
+            <img src="logo.png">
+        </header>
+        <nav>
+            
+<!--          <div id="menu-simulados">-->
+              
+              <button class="button" onclick="tamanhofonte(1)">A<sup>+</sup>
+              </button>
+              <button class="button" onclick="tamanhofonte(-1)">A<sup>-</sup>
+              </button>   
+              
+                  <br><br><br>
+                
+                <div>
+                    <ul> 
+
+                        <li><a class="link" href="#!simulado1">Simulado 1</a></li>  
+                        <li><a class="link" href="#!simulado2">Simulado 2</a></li>  
+                        <li><a class="link" href="#!simulado3">Simulado 3</a></li>         
+                    </ul>
+                </div>
+              
+<!--          </div>-->
+            
+        </nav>
+        <body ng-app="myModule">
+            <div ng-view></div>
+        </body>
+        </html>

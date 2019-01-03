@@ -1,0 +1,76 @@
+<body>
+  <div id="pesquisa">
+    Entre com sua Matrícula : <input type="text" ng-model="searchText.matricula" placeholder="Pesquisar matricula" />
+  </div>
+    
+    <br><br><br>
+
+    <span>
+          <select ng-model="searchText.especialidade">
+            <option value="">Especialidades - Todas</option>
+            <option value="cardiologia">cardiologia</option>
+            <option value="clinica medica">clinica medica</option>
+            <option value="pediatria">pediatria</option>
+            <option value="urologia">urologia</option>
+          </select>
+     </span>
+     <span>
+          <select ng-model="searchText.turma">
+            <option value="">Turmas - Todas</option>
+            <option value="2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR">2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR</option>
+            <option value="2008 MEDCURSO Natal - Turma A/2008 MED NATAL">2008 MEDCURSO Natal - Turma A/2008 MED NATAL</option>
+            <option value="2008 MEDCURSO SP - Turma A/2008 MED SP">2008 MEDCURSO SP - Turma A/2008 MED SP</option>
+            <option value="2008 MEDCURSO SP - Turma A/2007 MED SP">2008 MEDCURSO SP - Turma A/2007 MED SP</option>
+            <option value="2008 MEDCURSO NATAL - Turma A/2008 MED NATAL">2008 MEDCURSO NATAL - Turma A/2008 MED NATAL</option>
+            <option value="2008 MEDCURSO NATAL - Turma A/2005 MED NATAL">2008 MEDCURSO NATAL - Turma A/2005 MED NATAL</option>
+            <option value="2008 MEDCURSO SALVADOR - Turma A/2006 MED SALVADOR">2008 MEDCURSO SALVADOR - Turma A/2006 MED SALVADOR</option>
+            <option value="2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR">2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR</option>
+          </select>
+    </span>
+    <span>
+          <select ng-model="searchText.filial">
+            <option value="">Filiais - Todas</option>
+            <option value="Natal">Natal</option>
+            <option value="Salvador">Salvador</option>
+            <option value="SP">SP</option>
+          </select>
+    </span>
+
+    <br><br><br>
+
+    <span style="width:100%" onclick="imprimir()" class="link">Imprimir |</span>
+    
+    <span style="width:100%" onclick="openModal()" class="link">Enviar para um amigo</span>
+      
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="content">
+              <H3 align="center">Hello World!</H3>
+          </div>
+        </div>
+
+    <div id="tabelaimpressao">
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Nota</th>
+                <th>Matrícula</th>
+                <th>Especialidade</th>
+                <th>Turma</th>
+                <th>Filial</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="simulado in tabela | filter:searchText">
+                <td> {{ simulado.posicao }} </td>
+                <td> {{ simulado.nota }} </td>
+                <td> {{ simulado.matricula  }} </td>
+                <td> {{ simulado.especialidade  }} </td>
+                <td> {{ simulado.turma  }} </td>
+                <td> {{ simulado.filial  }} </td>
+            </tr>
+        </tbody>
+    </table>
+        
+    <iframe name="frameimpressao" width="0" height="0" frameborder="0"></iframe>
