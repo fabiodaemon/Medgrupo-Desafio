@@ -1,10 +1,25 @@
-<body>
-  <div id="pesquisa">
-    Entre com sua Matrícula : <input type="text" ng-model="searchText.matricula" placeholder="Pesquisar matricula" />
-  </div>
+    <h1>Página padrão</h1>
     
-    <br><br><br>
-    <h3>SIMULADO - PADRAO</h3>
+    <h3>Escolha o seu simulado ao lado!</h3><br>
+    
+    <p>
+    standard dummy text ever si was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+        
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    
+    standard dummy text ever si was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+
+    </p>
+    
+    <br><br>
+    
+    
+    
+    <div id="pesquisa">
+    <b>Entre com sua Matrícula :</b> <input id="campo-pesquisa" type="text" ng-model="searchText.matricula" placeholder="Pesquisar matricula" />
+    </div>
+    <br><br>
+    
     <span>
           <select ng-model="searchText.especialidade">
             <option value="">Especialidades - Todas</option>
@@ -38,6 +53,7 @@
 
     <br><br><br>
 
+    
     <span style="width:100%" onclick="imprimir()" class="link">Imprimir |</span>
     
     <span style="width:100%" onclick="openModal()" class="link">Enviar para um amigo</span>
@@ -50,7 +66,7 @@
         </div>
 
     <div id="tabelaimpressao">
-    <table>
+    <table id="example" class="table table-striped table-bordered">
         <thead>
             <tr>
                 <th>Posição</th>
@@ -74,3 +90,5 @@
     </table>
         
     <iframe name="frameimpressao" width="0" height="0" frameborder="0"></iframe>
+        
+    </div>

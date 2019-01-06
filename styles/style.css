@@ -2,8 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, div, span, applet, object, iframe,
+h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -52,47 +52,57 @@ table {
   border-spacing: 0;
 }
 
-.botoes {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
-  margin: 5px;
+  padding: 70px;
+  margin-top: 40px;
 }
 
 header {
-  color: #000000;
-  text-align: center;
-  width: 100%;
-  height: 60%;
-  margin-bottom: 30px;
+  height: 40%;
+  background-color: aliceblue;
+  margin-top: 20px;
 }
 
 table {
   border-collapse: collapse;
 }
 table td {
-  border: 1px solid black;
+  border: 2px solid #ffffff;
   padding: 5px;
 }
 table th {
-  border: 1px solid black;
+  border: 2px solid #ffffff;
   padding: 5px;
   text-align: left;
+  background-color: #7a7a7a;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 table tbody td:nth-child(odd) {
-  background: #eee;
+  background: #eeeeee;
+}
+table tbody td:nth-child(even) {
+  background: #ffffff;
+}
+
+.campo-pesquisa {
+  color: #000000;
 }
 
 nav {
   display: block;
   float: left;
-  width: 13%;
   height: 100%;
-  background-color: #ffffff;
-  height: 968px;
+  width: 10%;
+  overflow: auto;
+  position: absolute;
+}
+
+section {
+  margin-left: 12%;
+  padding: 5px;
+  display: block;
+  width: 70%;
 }
 
 .modal {
@@ -153,13 +163,12 @@ ul li {
   border: 1px;
 }
 
-#pesquisa {
-  border-radius: 5px;
-  background-color: #3333ff;
-  padding: 5px;
-  width: 40%;
-  color: #ffffff;
-  font-weight: 300;
+.botoes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: block;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

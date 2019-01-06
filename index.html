@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-        <html ng-app="app1">
-        <head>
+<html ng-app="app1">
+<head>
+            <meta charset="UTF-8">
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>          
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="styles/style.css">
+<!--
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="scripts/jquery1.js"></script>
+-->
             <script src="scripts/route-config.js"></script>
             <script src="scripts/table.js"></script>
             <script src="scripts/size.js"></script>
             <script src="scripts/modal.js"></script>
             <script src="scripts/print.js"></script>
-            <link rel="stylesheet" href="styles/style.css">
-        </head>   
-        <header>
-            <img src="logo.png">
-        </header>
-        <nav>
+<!--            <script src="scripts/pagination-table.js"></script>-->
+            
+</head>   
+           
+        <body ng-app="myModule" style="background-image: url(imagens/fundo.jpg); background-repeat: no-repeat">
+            
+           <header>
+              <nav>
               
-              <button class="button" onclick="tamanhofonte(1)">A<sup>+</sup>
-              </button>
-              <button class="button" onclick="tamanhofonte(-1)">A<sup>-</sup>
-              </button>   
-              
+                  <button class="button" onclick="tamanhofonte(1)">A<sup>+</sup>
+                  </button>
+                  <button class="button" onclick="tamanhofonte(-1)">A<sup>-</sup>
+                  </button>   
+
                   <br><br><br>
                 
-                <div>
-                    <ul> 
+                    <div>
+                        <ul> 
 
-                        <li><a class="link" href="#!simulado1">Simulado 1</a></li>  
-                        <li><a class="link" href="#!simulado2">Simulado 2</a></li>  
-                        <li><a class="link" href="#!simulado3">Simulado 3</a></li>         
-                    </ul>
-                </div>
+                            <li><a class="link" href="#!simulado1">Simulado 1</a></li>  
+                            <li><a class="link" href="#!simulado2">Simulado 2</a></li>  
+                            <li><a class="link" href="#!simulado3">Simulado 3</a></li>         
+                            <li><a class="link" href="#!simulado4">Simulado 4</a></li>         
+                            <li><a class="link" href="#!simulado5">Simulado 5</a></li>         
+                            <li><a class="link" href="#!simulado6">Simulado 6</a></li>         
+                            <li><a class="link" href="#!simulado7">Simulado 7</a></li>         
+                            <li><a class="link" href="#!simulado8">Simulado 8</a></li>         
+                            <li><a class="link" href="#!simulado9">Simulado 9</a></li>         
+                            <li><a class="link" href="#!simulado10">Simulado 10</a></li>         
+                        </ul>
+                    </div>
  
+                </nav>
+           </header>
             
-        </nav>
-        <body ng-app="myModule">
-            <div ng-view></div>
+           <section>
+               
+               <div ng-view></div>
+               
+           </section> 
+            
         </body>
         </html>
