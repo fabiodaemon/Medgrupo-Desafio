@@ -7,20 +7,19 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <link rel="stylesheet" href="styles/style.css">
-<!--
             <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
             <script src="scripts/jquery1.js"></script>
--->
             <script src="scripts/route-config.js"></script>
             <script src="scripts/table.js"></script>
             <script src="scripts/size.js"></script>
             <script src="scripts/modal.js"></script>
             <script src="scripts/print.js"></script>
-<!--            <script src="scripts/pagination-table.js"></script>-->
+            <script src="scripts/pagination-table.js"></script>
+            <script src="scripts/menu-show.js"></script>
             
 </head>   
            
-        <body ng-app="myModule" style="background-image: url(imagens/fundo.jpg); background-repeat: no-repeat">
+        <body ng-app="myModule" onload="desaparecer()" style="background-image: url(imagens/fundo.jpg); background-repeat: no-repeat">
             
            <header>
               <nav>
@@ -33,22 +32,32 @@
                   <br><br><br>
                 
                     <div>
-                        <ul> 
+                        
+                      <ul> 
 
-                            <li><a class="link" href="#!simulado1">Simulado 1</a></li>  
-                            <li><a class="link" href="#!simulado2">Simulado 2</a></li>  
-                            <li><a class="link" href="#!simulado3">Simulado 3</a></li>         
-                            <li><a class="link" href="#!simulado4">Simulado 4</a></li>         
-                            <li><a class="link" href="#!simulado5">Simulado 5</a></li>         
-                            <li><a class="link" href="#!simulado6">Simulado 6</a></li>         
-                            <li><a class="link" href="#!simulado7">Simulado 7</a></li>         
-                            <li><a class="link" href="#!simulado8">Simulado 8</a></li>         
-                            <li><a class="link" href="#!simulado9">Simulado 9</a></li>         
-                            <li><a class="link" href="#!simulado10">Simulado 10</a></li>         
-                        </ul>
+                         <li><a class="link" href="#" onclick="aparecer()">Simulado 1</a>
+                             
+                                <ul id="menu-lista">
+                                    <li><a href="#!simulado1">Prova Objetiva</a></li>
+                                    <li>Prova Prática</li>
+                                </ul>
+                            
+                         </li>
+                         
+                         <li><a class="link" href="#!simulado2" onclick="aparecer()">Simulado 2</a>
+                                                         
+                         </li>
+                         
+                         <li><a class="link" href="#!simulado3" onclick="aparecer()">Simulado 3</a>
+                                                         
+                         </li>
+                          
+                     </ul>    
+                            
                     </div>
  
                 </nav>
+               
            </header>
             
            <section>

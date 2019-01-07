@@ -9,6 +9,8 @@
                     { posicao: "6", nota: "70", matricula: "897416", especialidade: "clinica medica", turma: "2008 MEDCURSO NATAL - Turma A/2008 MED NATAL", filial:"Natal (RN)" },
                     { posicao: "7", nota: "10", matricula: "205500", especialidade: "clinica medica", turma: "2008 MEDCURSO SALVADOR - Turma A/2006 MED SALVADOR", filial:"Salvador (BA)" },
                     { posicao: "8", nota: "10", matricula: "897413", especialidade: "urologia", turma: "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR", filial:"Salvador (BA)" },
+                    { posicao: "9", nota: "10", matricula: "897413", especialidade: "urologia", turma: "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR", filial:"Salvador (BA)" },
+                    { posicao: "10", nota: "10", matricula: "897413", especialidade: "urologia", turma: "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR", filial:"Salvador (BA)" },
                     { posicao: "11", nota: "50", matricula: "897415", especialidade: "clinica medica", turma: "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR", filial:"Salvador (BA)" },                    
                     { posicao: "12", nota: "50", matricula: "897415", especialidade: "clinica medica", turma: "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR", filial:"Salvador (BA)" },                    
                     { posicao: "13", nota: "50", matricula: "897415", especialidade: "clinica medica", turma: "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR", filial:"Salvador (BA)" },                    

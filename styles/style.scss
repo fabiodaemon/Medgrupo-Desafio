@@ -10,14 +10,12 @@
 
 
 // Variáveis para ilustração do conhecimento do uso delas //
-$cor-background: #ffffff;
 $cor-texto: #000000;
-$cor-modal: #000000;
-$cor-fechar: #999999;
+$sombra: #000000;
 $cor-link: #000000;
-$cor-link-hover: #3333ff;
+$cor-link-hover: #ecf1f9;;
 $cor-button: #000000;
-$cor-button-txt: #ffffff;
+$texto-branco: #ffffff;
 
 
 // mixin para ilustração do conhecimento do componente do SASS. Por ser um arquivo pequeno de CSS não foi usado em todas as propriedades, porque apenas foi uma ilustração do uso delas na SPA em questão //
@@ -28,13 +26,12 @@ $cor-button-txt: #ffffff;
   transform: $efeito;
 }
 
-// este é apenas uma demonstração de conhecimento do placeholder, já que a folha de estilo é pequena para dispor de tantos placeholders. O objetivo é apenas centralizar os botoes na NAV e qualquer outro componente sem precisar reescrever as mesmas propriedades //
+// este é apenas uma demonstração de conhecimento do placeholder, já que a folha de estilo é pequena para dispor de tantos placeholders. O objetivo é apenas colocar propriedades como display: block e qualquer outro componente sem precisar reescrever as mesmas propriedades //
 
-%centralizar {
+%padrao {
+
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    float: block;
+
 }
 
 body{
@@ -46,7 +43,6 @@ body{
 header{
     
     height: 40%;
-    background-color: aliceblue;
     margin-top: 20px;
 }
 
@@ -54,12 +50,12 @@ table {
     border-collapse: collapse;
     
     td{
-        border: 2px solid #ffffff;
+        border: 2px solid $texto-branco;
         padding: 5px;
     }
     
     th{
-        border: 2px solid #ffffff;
+        border: 2px solid $texto-branco;
         padding: 5px;
         text-align: left;
         background-color: #7a7a7a;
@@ -72,15 +68,27 @@ table {
     }
     
    tbody td:nth-child(even) {
-       background: #ffffff;
+       background: $texto-branco;
     }
 }
 
-.campo-pesquisa{color:#000000}
+.pesquisa{
+    
+    width: 100%; 
+    text-align: left; 
+    background-color: #ecf1f9;
+    height: 50px;
+    margin: 0;
+    padding: 15px;
+    font-size: 15px;
+    
+}
+
+#campo-pesquisa{color: $cor-texto;}
 
 nav{
     
-   display: block; 
+   @extend %padrao;
    float: left;
    height: 100%;
    width: 10%;
@@ -91,10 +99,9 @@ nav{
 
 section{
     
+    @extend %padrao;
     margin-left: 12%;    
     padding: 5px;
-    display: block;
-//    background-color: blueviolet;
     width: 70%;    
 }
 
@@ -108,7 +115,7 @@ section{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: $cor-modal;
+    background-color: $sombra;
 
 
 .content{
@@ -122,7 +129,7 @@ section{
 }
 
 .close {
-color: white;
+color: $texto-branco;
 position: absolute;
 top: 10px;
 right: 25px;
@@ -130,13 +137,13 @@ font-size: 35px;
 font-weight: bold;
 }
         &:hover{
-        color: $cor-texto;
+        color: $texto-branco;
         cursor: pointer;
             
         }
         
         &:focus{
-        color: $cor-texto;
+        color: $texto-branco;
         cursor: pointer;
             
         }
@@ -157,25 +164,22 @@ font-weight: bold;
 
 ul{
     
+    list-style: none;
+    
     li{
-        text-decoration: none;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 10px;
     }
 }
 
-.button{
+button{
   
-  color: $cor-button-txt;
+  color: $texto-branco;
   background-color: $cor-button;
-  font-size: 20px;
-  border: 1px;
-
-}
-
-.botoes{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    float: block;
-    padding: 10px;
+  font-size: 20px;  
+  float: block;
+  padding: 10px;
+  height: 35px;  
+  width: 40px;  
 }
