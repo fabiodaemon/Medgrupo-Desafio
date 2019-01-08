@@ -109,49 +109,7 @@ section{
     width: 70%;    
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: $sombra;
 
-
-.content{
-        
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-.close {
-color: $texto-branco;
-position: absolute;
-top: 10px;
-right: 25px;
-font-size: 35px;
-font-weight: bold;
-}
-        &:hover{
-        color: $texto-branco;
-        cursor: pointer;
-            
-        }
-        
-        &:focus{
-        color: $texto-branco;
-        cursor: pointer;
-            
-        }
-    }
 
 .link{
     
@@ -177,8 +135,8 @@ ul{
     }
 }
 
-button{
-  
+.botao-fonte{
+
   color: $texto-branco;
   background-color: $cor-button;
   font-size: 20px;  
