@@ -1,4 +1,4 @@
-           // Arquivo de configuração das rotas para o ng-Route para nosso SPA //
+           // Arquivo de configuração das rotas para o ng-Route para o SPA criado //
 
             var app = angular.module("app1", ["ngRoute"]);
             app.config(function($routeProvider) {
